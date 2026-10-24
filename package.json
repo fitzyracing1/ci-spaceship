@@ -1,0 +1,10 @@
+{
+  "name": "ci-spaceship",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "mission": "node scenarios/generate.mjs --seed 42 --count 50 --out feed.json && node solver/solve.mjs --feed feed.json --out solved.json && node checks/grade.mjs --seed 42 --count 50 --solved solved.json",
+    "test": "node --test test/"
+  }
+}
