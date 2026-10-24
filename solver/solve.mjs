@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Reference solver bot. Sees each transfer with a gap and fills it. Never reads checks/ (no peeking at truth).
+// Reference solver bot. Sees each transfer with a gap and fills it. Never reads the grader or its hidden answers.
 //   node solver/solve.mjs --feed feed.json --out solved.json
 //   node solver/solve.mjs --url http://localhost:8787 [--max 200]   (crawl the live feed, verify each)
 import { readFileSync, writeFileSync } from 'node:fs';
